@@ -46,9 +46,16 @@ public class Advanced {
      * @return if word contains Consecutive repeated letters, one of the repeated letters should be omitted
      */
     public String doubleChar(String word) {
-        return null;
+            StringBuilder result = new StringBuilder();
+            for (int i = 0; i < word.length(); i++) {
+                if (i == 0 || word.charAt(i) != word.charAt(i - 1)) {
+                    result.append(word.charAt(i));
+                }
+            }
+            return result.toString();
+        }
     }
-}
+
 
 
 
