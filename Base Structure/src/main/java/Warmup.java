@@ -78,7 +78,7 @@ public class Warmup {
             b = a;
             a= t;
         }
-
+// طول رشته b قطعا در اینجا کمتر خواهد بود
         for (int i = 0; i < b; i++) {
             if (charArray1[i] < charArray2[i]) {
                 result = wordA;
